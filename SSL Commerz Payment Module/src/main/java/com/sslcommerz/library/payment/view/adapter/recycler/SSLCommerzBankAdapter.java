@@ -2,7 +2,7 @@ package com.sslcommerz.library.payment.view.adapter.recycler;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -115,9 +115,7 @@ public class SSLCommerzBankAdapter extends RecyclerView.Adapter<SSLCommerzBankAd
             holder.bankLogo.requestLayout();
 
             Picasso.get().load(bankList.get(position).getLogo().toString()).into(holder.bankLogo);
-        }catch (Exception e){
-            Log.e(TAG, "onBindViewHolder: "+e.getMessage());
-        }
+        }catch (Exception e){}
     }
 
     @Override

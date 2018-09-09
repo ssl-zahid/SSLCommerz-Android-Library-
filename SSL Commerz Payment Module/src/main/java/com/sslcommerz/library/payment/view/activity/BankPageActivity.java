@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.http.SslError;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.View;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
@@ -87,7 +87,6 @@ public class BankPageActivity extends BaseActivity implements BankInformationLis
             }
             @Override
             public void onPageFinished(WebView view, String url) {
-                Log.e(TAG, "onPageFinished: "+url );
                 if(url.equals(AllInformation.TRANSACTION_END_POINT)){
                     sslCommerzManagement.getTransactionInformation(basicInformationModel.getSessionkey(),mandatoryFieldModel.getStoreId(),mandatoryFieldModel.getStorePassword(),mandatoryFieldModel.getSdkType().equals(SdkType.LIVE),BankPageActivity.this);
                 }

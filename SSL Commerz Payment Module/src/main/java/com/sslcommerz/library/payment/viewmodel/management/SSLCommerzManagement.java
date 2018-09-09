@@ -1,7 +1,7 @@
 package com.sslcommerz.library.payment.viewmodel.management;
 
 import android.content.Context;
-import android.util.Log;
+
 
 import com.google.gson.Gson;
 import com.sslcommerz.library.payment.model.config.ApiClient;

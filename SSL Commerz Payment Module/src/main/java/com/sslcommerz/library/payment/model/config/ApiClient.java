@@ -1,7 +1,7 @@
 package com.sslcommerz.library.payment.model.config;
 
 import android.os.Build;
-import android.util.Log;
+
 
 import com.sslcommerz.library.payment.view.activity.BuildConfig;
 
@@ -49,8 +49,8 @@ public class ApiClient {
                                     .build();
                             return chain.proceed(request);
                         }
-                    })
-                    .addInterceptor(BuildConfig.DEBUG ? DefaultInterceptors.getHttpBodyLoggingInterceptor() : DefaultInterceptors.getHttpNoneLoggingInterceptor());
+                    });
+                    //.addInterceptor(BuildConfig.DEBUG ? DefaultInterceptors.getHttpBodyLoggingInterceptor() : DefaultInterceptors.getHttpNoneLoggingInterceptor());
             client = enableTls12OnPreLollipop(client);
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(url)
@@ -80,9 +80,7 @@ public class ApiClient {
                 specs.add(ConnectionSpec.CLEARTEXT);
 
                 client.connectionSpecs(specs);
-            } catch (Exception exc) {
-                Log.e("OkHttpTLSCompat", "Error while setting TLS 1.2", exc);
-            }
+            } catch (Exception exc) {}
         }
 
         return client;

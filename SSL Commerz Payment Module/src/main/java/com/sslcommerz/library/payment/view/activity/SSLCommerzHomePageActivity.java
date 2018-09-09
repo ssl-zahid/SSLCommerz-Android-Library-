@@ -7,7 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -167,6 +167,7 @@ public class SSLCommerzHomePageActivity extends BaseActivity implements BankInfo
         } else if(requestId.equals(sslCommerzManagement.CONFIRM_PAYMENT_REQUEST_ID)){
             confirmCardButtonLayout.setVisibility(View.GONE);
             confirmCardLoadingLayout.setVisibility(View.VISIBLE);
+            hideKeyboard();
         }
     }
 
