@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/toolbarIndicator"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/left_arrow"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="17dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:text="Bank List Page"
+        android:textColor="@color/colorPrimaryOpposite"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:lines="1"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

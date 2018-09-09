@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/warning"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+
+        <TextView
+            android:text="@string/confirmation"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/are_you_sure_you_want_to_delete_your_card"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlackLight"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cancelBtn"
+                android:text="@string/cancel"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="14sp"
+                android:backgroundTint="@color/colorBlackSuperLight"
+                android:background="@drawable/solid_round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/deleteCardBtn"
+                android:text="@string/delete_card"
+                android:textColor="@color/colorWhite"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="14sp"
+                android:backgroundTint="@color/colorRed"
+                android:background="@drawable/solid_round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loadingLayout"
+            android:visibility="gone"
+            layout="@layout/progress_layout"/>
+
+    </LinearLayout>
+
+</LinearLayout>

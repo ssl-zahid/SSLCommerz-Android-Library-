@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSL Commerz Payment Module/SSL Commerz Payment Module.iml" filepath="$PROJECT_DIR$/SSL Commerz Payment Module/SSL Commerz Payment Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sslcommerz-library.iml" filepath="$PROJECT_DIR$/sslcommerz-library.iml" />
+    </modules>
+  </component>
+</project>

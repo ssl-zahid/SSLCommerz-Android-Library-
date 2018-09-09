@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SSL Commerz Payment Sdk</string>
+    <string name="loading">Loading....</string>
+    <string name="notification_error_ssl_cert_invalid">There is a problem with this website\'s security certificate. The security certificate presented by this website was issued for a different website\'s address. Press OK to continue</string>
+    <string name="selectPaymentMethod">Please select payment mode</string>
+    <string name="select_payment_option">Select payment option</string>
+
+    <string name="application_id_invalid">Application ID is not valid</string>
+    <string name="invalid_request">Invalid request</string>
+    <string name="connectivity_error">Network or conversion error</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="access_deny">Access deny</string>
+    <string name="insecure_internet_connection">Internet connection is not secure</string>
+    <string name="invalid_json_response">Invalid response</string>
+    <string name="network_error">Network connection cannot be established</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="server_not_responding">Server not responding</string>
+    <string name="cards">Cards</string>
+    <string name="mobile">Mobile</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="all">All</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure">Are you Sure?</string>
+    <string name="are_you_sure_you_want_to_delete_your_card">Are you sure you want to delete your card?</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="delete_card">Delete</string>
+    <string name="cvv_text">* For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card\'s account number.\n* For American Express, the four-digit CVV number is printed on the front of the card above the card account number.</string>
+    <string name="cvv_number">CVV Number :</string>
+    <string name="proceed_and_pay">Proceed And Pay</string>
+    <string name="please_select_your_saved_card_to_pay">Please select your saved card to pay</string>
+    <string name="card">Card</string>
+    <string name="please_select_payment_mode">Please select payment mode</string>
+
+</resources>
