@@ -12,6 +12,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,7 +38,10 @@ abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        try {
+            requestWindowFeature(Window.FEATURE_NO_TITLE);
+            getSupportActionBar().hide();
+        }catch (Exception e){}
         progressDialog = new ProgressDialog(this);
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
     }

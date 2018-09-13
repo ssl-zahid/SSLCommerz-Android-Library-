@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     private void makePayment(){
 
         /* Mandatory Field*/
-        MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("testbox","qwerty","10", "REF123", CurrencyType.BDT, SdkType.TESTBOX, SdkCategory.BANK_LIST);
-        //MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("directpaylive","directpaylive38326","100.10", "REF123", CurrencyType.BDT, SdkType.LIVE, SdkCategory.BANK_LIST);
+        //MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("testbox","qwerty","10", "REF123", CurrencyType.BDT, SdkType.TESTBOX, SdkCategory.BANK_LIST);
+        MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("directpaylive","directpaylive38326","100.10", "REF123", CurrencyType.BDT, SdkType.LIVE, SdkCategory.BANK_LIST);
         mandatoryFieldModel.setTokenizeData("f5d66a527ff181486321bf7c3s7f54de","ca04bf91675522debb01117dde6aede0");
         //MandatoryFieldModel mandatoryFieldModel1 = new MandatoryFieldModel("royaltybdlive","royaltybdlive71473","10", "1012", CurrencyType.BDT, SdkType.LIVE, SdkCategory.BANK_LIST/*, BankName.DBBL_VISA*/);
 
